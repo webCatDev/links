@@ -4,6 +4,7 @@ import Image from "next/image";
 import Card from "./Card";
 import GithubIcon from "./Icons/GithubIcon";
 import InstagramIcon from "./Icons/InstagramIcon";
+import BoookIcon from "./Icons/BookIcon";
 
 export default function Home() {
   const handleMouseMove = (e) => {
@@ -30,7 +31,11 @@ export default function Home() {
 
       <p className="description">🚧 Yapım aşamasındadır.</p>
 
-      <div id="cards" onMouseMove={handleMouseMove}>
+      <div
+        id="cards"
+        onMouseMove={handleMouseMove}
+        onTouchMove={handleMouseMove}
+      >
         <Card
           href="https://github.com/webCatDev"
           icon={<GithubIcon />}
@@ -41,7 +46,11 @@ export default function Home() {
           icon={<InstagramIcon />}
           title="@webcatdev"
         />
-        <Card href="#" icon="" title="Hello World" />
+        <Card
+          href="https://1000kitap.com/Hamzaessiz"
+          icon={<BoookIcon />}
+          title="Hamzaessiz"
+        />
         <Card href="#" icon="" title="Hello World" />
         <Card href="#" icon="" title="Hello World" />
         <Card href="#" icon="" title="Hello World" />
