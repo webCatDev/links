@@ -32,6 +32,11 @@ img {
   object-fit: cover;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
 #cards {
   display: flex;
   flex-direction: column;
