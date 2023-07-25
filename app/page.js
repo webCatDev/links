@@ -1,10 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Card from "./Card";
-import GithubIcon from "./Icons/GithubIcon";
-import InstagramIcon from "./Icons/InstagramIcon";
-import BoookIcon from "./Icons/BookIcon";
+import Card from "./Card.js";
+import GithubIcon from "./Icons/GithubIcon.js";
+import InstagramIcon from "./Icons/InstagramIcon.js";
+import BoookIcon from "./Icons/BookIcon.js";
 
 export default function Home() {
   const handleMouseMove = (e) => {
